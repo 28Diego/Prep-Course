@@ -175,7 +175,7 @@ describe('mayorACien(array)', function() {
 });
 
 describe('breakStatement(numero)', function() {
-  it('should return an array with the values ​​resulting from adding 2 in each iteration', function() {
+  it('should return an array with the values resulting from adding 2 in each iteration', function() {
     expect(breakStatement(50)).toEqual([52, 54, 56, 58, 60, 62, 64, 66, 68, 70]);
   });
   it('should stop the execution if the sum value and the iteration number match', function() {
