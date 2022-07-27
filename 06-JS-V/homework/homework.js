@@ -9,14 +9,14 @@ function crearUsuario() {
   // Devuelve la clase
   // Tu código:
         
-      class Usuario {
-          constructor(opciones) {
+      class Usuario{
+          constructor(opciones){
               this.usuario = opciones.usuario;
               this.nombre = opciones.nombre;
               this.email = opciones.email;
               this.password = opciones.password;
           }
-            saludar() {
+            saludar(){
                   return "Hola, mi nombre es " + this.nombre;
             }
       }
@@ -41,7 +41,7 @@ function agregarStringInvertida() {
   // 'toni'.reverse() => 'inot'
   // Pista: Necesitarás usar "this" dentro de "reverse"
     
-           String.prototype.reverse = function() { 
+           String.prototype.reverse = function(){ 
             var StringInvertida = ""
             for(var i = this.length -1; i >= 0; i--){
               StringInvertida = StringInvertida + this[i];
@@ -62,7 +62,7 @@ function agregarStringInvertida() {
     //   Domicilio: 'Saavedra 123'
     //  }
 
-  class Persona {
+  class Persona{
     constructor(nombre, apellido, edad, domicilio) {
       // Crea el constructor:
           this.nombre = nombre;
@@ -70,8 +70,11 @@ function agregarStringInvertida() {
           this.edad = edad;
           this.domicilio = domicilio
     }
-        detalle() {
-            return  {Nombre: this.nombre, Apellido: this.apellido, Edad: this.edad, Domicilio: this.domicilio}
+        detalle(){
+            return {Nombre: this.nombre,
+                    Apellido: this.apellido,
+                    Edad: this.edad,
+                    Domicilio: this.domicilio}
         }
               //var user = new Persona("diego","almerco","25","santa cruz")
   }
@@ -91,7 +94,7 @@ function agregarMetodo() {
   //La función agrega un método "datos" a la clase Persona que toma el nombre y la edad de la persona y devuelve: 
   //Ej: "Juan, 22 años"
 
-      Persona.prototype.datos = function () {
+      Persona.prototype.datos = function (){
             return this.nombre +", "+ this.edad + " años";
       }
 
