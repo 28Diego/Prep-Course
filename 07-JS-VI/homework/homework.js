@@ -5,13 +5,13 @@ function mayuscula(nombre) {
   //ej: Recibe "mario" ----> Devuelve "Mario"
   //Tu código:
 
-  return nombre.charAt(0).toUpperCase() + nombre.slice(1);
+  //return nombre.charAt(0).toUpperCase() + nombre.slice(1);
 
   // Henry
 
-  //var letramayuscula = nombre[0].toUpperCase()
-  //var letraminuscula = nombre.slice(1)
-  //return letramayuscula + letraminuscula
+  var letraMayu = nombre[0].toUpperCase()
+  var letraminu = nombre.slice(1)
+  return letraMayu + letraminu;
 }
 
 function invocarCallback(cb) {
