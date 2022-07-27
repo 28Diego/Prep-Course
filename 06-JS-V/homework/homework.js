@@ -9,7 +9,7 @@ function crearUsuario() {
   // Devuelve la clase
   // Tu código:
         
-      class Usuario{
+      class Usuario {
           constructor(opciones) {
               this.usuario = opciones.usuario;
               this.nombre = opciones.nombre;
@@ -83,7 +83,7 @@ function crearInstanciaPersona(nombre, apellido, edad, dir) {
 
 
         var persona = new Persona(nombre, apellido, edad, dir)
-                     
+      
         return persona;
 }
   
